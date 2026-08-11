@@ -24,12 +24,12 @@ from astrbot.api.event import AstrMessageEvent, filter
 from astrbot.api.message_components import File, Image, Plain
 from astrbot.api.star import Context, Star, register
 
-from core.ai_generator import AI3DError, AI3DGenerator
-from core.generators import generate, list_models, resolve_name
-from core.mesh import Mesh
-from core.preview import generate_html_preview
-from core.renderer import render_to_png
-from core.utils import format_model_help, parse_params, safe_filename
+from .core.ai_generator import AI3DError, AI3DGenerator
+from .core.generators import generate, list_models, resolve_name
+from .core.mesh import Mesh
+from .core.preview import generate_html_preview
+from .core.renderer import render_to_png
+from .core.utils import format_model_help, parse_params, safe_filename
 
 #: 指令别名（中英文）
 CMD_HEADERS = ("3d", "3dmodel", "3d模型", "造模型", "做3d", "3d打印")
@@ -50,10 +50,10 @@ HELP_TEXT = (
 
 
 @register(
-    "astrbot_plugin_3dmodel",
-    "WorkBuddy",
+    "astrbot_plugin_JO3dmodel",
+    "Jonathan",
     "在聊天中创建 3D 模型：本地程序化生成（球体/花瓶/齿轮/地形/文字浮雕等 15+ 种）+ AI 文生 3D（Tripo/Meshy），输出 STL/OBJ/GLB 文件与预览图",
-    "v1.0.0",
+    "v1.0.1",
 )
 class ThreeDModelPlugin(Star):
     def __init__(self, context: Context, config: AstrBotConfig):

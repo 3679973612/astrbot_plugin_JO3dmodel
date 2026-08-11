@@ -53,7 +53,7 @@ HELP_TEXT = (
     "astrbot_plugin_JO3dmodel",
     "Jonathan",
     "在聊天中创建 3D 模型：本地程序化生成（球体/花瓶/齿轮/地形/文字浮雕等 15+ 种）+ AI 文生 3D（Tripo/Meshy），输出 STL/OBJ/GLB 文件与预览图",
-    "v1.0.1",
+    "v1.2.0",
 )
 class ThreeDModelPlugin(Star):
     def __init__(self, context: Context, config: AstrBotConfig):

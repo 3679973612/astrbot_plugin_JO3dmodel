@@ -1,10 +1,10 @@
-name: astrbot_plugin_3dmodel # 插件唯一识别名，以 astrbot_plugin_ 前缀开头
+name: astrbot_plugin_JO3dmodel # 插件唯一识别名，以 astrbot_plugin_ 前缀开头
 display_name: 3D模型生成器 # 用于展示的名字（需要版本 >= v4.5.0）
 desc: 在聊天中直接创建 3D 模型。支持本地程序化生成（球体/花瓶/齿轮/地形/文字浮雕等 15+ 种模型）与 AI 文生 3D（Tripo / Meshy），自动输出 STL/OBJ/GLB 文件 + PNG 预览图 + 可旋转的 3D 交互预览页。3D 打印、游戏建模、学习演示全能。
 short_desc: 聊天内创建 3D 模型：程序化生成 + AI 文生 3D
 version: v1.0.1 # 插件版本号
 author: Jonathan
-repo: https://github.com/3679973612/astrbot_plugin_3dmodel # 插件仓库地址
+repo: https://github.com/3679973612/astrbot_plugin_JO3dmodel # 插件仓库地址
 astrbot_version: ">=4.16,<5" # 要求的 AstrBot 版本范围（PEP 440）
 support_platforms:
   - aiocqhttp
